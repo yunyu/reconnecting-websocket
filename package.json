@@ -12,7 +12,7 @@
         "report": "nyc report --reporter=html && opn coverage/index.html",
         "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
         "lint": "DEBUG=eslint:file-enumerator eslint __tests__/*.* ./*.ts",
-        "prepublishOnly": "npm run clean && npm run lint && npm run build && npm test"
+        "prepublishOnly": "npm run clean && npm run lint && npm run build"
     },
     "keywords": [
         "websocket",
